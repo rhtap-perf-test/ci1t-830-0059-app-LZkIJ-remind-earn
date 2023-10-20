@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ropg
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0059-tenant/ci1t-830-0059-app/devfile-sample-ropg@sha256:578c39f4afd1ebfe80c6a0e9f04762b260a5987440b19840156998898ea609e0
+        name: my-nodejs
+        resources: {}
+status: {}
